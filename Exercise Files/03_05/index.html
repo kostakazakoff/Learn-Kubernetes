@@ -1,0 +1,69 @@
+
+
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>
+Sign in
+</title>
+    <link rel="stylesheet" href="/static/css/reset.css">
+    <link rel="stylesheet" href="/static/css/styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css">
+</head>
+
+<nav class="header">
+    
+<ul role="list" class="nav">
+    
+        <li>
+            <a href="/profiles/create/" class="nav__item">sign up</a>
+        </li>
+    
+</ul>
+
+
+</nav>
+
+<body>
+    
+
+<header class="section-title">
+    <h2>SIGN IN</h2>
+</header>
+
+<div class="centered-form">
+    <form class="info-container" method="post" action="/profiles/login/">
+        <input type="hidden" name="csrfmiddlewaretoken" value="n9YvfbTQO6xLW2emYDOpRhJsY7ygD3S8Z1bhROJ4MczVlnve2D7sr7OUTJBOkwnE">
+        
+        
+            
+            <div class="flex-row">
+                <label for="id_username">Email</label>
+                <input type="text" name="username" autofocus autocapitalize="none" autocomplete="username" maxlength="254" required id="id_username">
+            </div>
+        
+            
+            <div class="flex-row">
+                <label for="id_password">Password</label>
+                <input type="password" name="password" autocomplete="current-password" required id="id_password">
+            </div>
+        
+
+        
+
+        <div class="btns-container top-margin">
+            <button class="btn primary-btn" type="submit">Sign in</button>
+            <a href="/" class="btn primary-btn">Cancel</a>
+        </div>
+    </form>
+</div>
+
+
+</body>
+
+</html>
